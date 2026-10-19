@@ -51,7 +51,7 @@ python3 -m http.server 8000
 - 利用規約の免責・損害賠償・変更手続についての法律専門家による確認
 - 制定日・更新日が実際の適用開始日・更新日に合っていること
 
-Google Mobile Ads SDKのPrivacy ManifestにはデバイスIDについて`Tracking=true`の宣言があります。一方、Food Lifeは非パーソナライズ広告を指定し、アプリ独自のATT許可要求を実装していません。この組み合わせについて、SDKの実際のデータ処理、App Store Connectのプライバシー申告、ATT要件の整合性を最終配布ビルドで確認してください。今回のWeb文面の調整は、この確認やATT対応の完了を意味しません。
+Google Mobile Ads SDKのPrivacy ManifestにはデバイスIDについて`Tracking=true`の宣言があります。Food Lifeは広告に関連するトラッキングについてATTで利用者の許可を確認し、許可がない場合は広告をリクエスト・読み込みしない方針です。許可後もUMPの同意状況を確認し、広告配信が許可された場合に限り表示します。広告リクエストでは非パーソナライズ広告を指定しています。SDKの実際のデータ処理、ATT状態変更時の挙動、App Store Connectのプライバシー申告との整合性は、最終配布ビルドと実機で確認してください。Web文面の更新のみで、これらの検証が完了したことにはなりません。
 
 利用規約の免責条項の開発者向け参照：[消費者契約法（e-Gov法令検索）](https://laws.e-gov.go.jp/law/412AC0000000061)、[消費者庁 消費者契約法](https://www.caa.go.jp/policies/policy/consumer_system/consumer_contract_act/)。適用関係や条項の有効性は、本アプリの提供条件と個別事情に即して確認してください。
 

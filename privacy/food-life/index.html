@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>プライバシーポリシー | Food Life | ddkklab</title>
-  <meta name="description" content="Food Lifeで扱う食事記録、端末内保存、バックアップ、Google AdMob広告とUMPによる同意管理について説明します。">
+  <meta name="description" content="Food Lifeの食事記録、端末内保存、バックアップ、ATTによる許可確認、Google AdMob広告とUMPによる同意管理について説明します。">
   <meta name="theme-color" content="#f8f7f2">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="ddkklab">
@@ -25,7 +25,7 @@
   <main id="main">
     <section class="page-hero"><div class="page-hero-inner"><p class="eyebrow">Privacy</p><h1>Food Life<br>プライバシーポリシー</h1><p>アプリで扱う情報と、その取り扱いについて。</p></div></section>
     <article class="content-wrap policy-content">
-      <p class="policy-meta">最終更新日：2026年10月15日</p>
+      <p class="policy-meta">最終更新日：2026年10月19日</p>
       <h2>1. このポリシーについて</h2>
       <p>このポリシーは、個人開発ブランド「ddkklab」が提供するFood Life（Bundle Identifier：com.ddkklab.foodlife）における情報の取り扱いを説明します。初期配信地域は日本です。Food Lifeは、日々の食事を記録し、あとから振り返るためのアプリです。</p>
       <h2>2. アプリで扱う情報と利用目的</h2>
@@ -38,10 +38,10 @@
       <p>Food LifeはGoogle AdMob（Google Mobile Ads SDK）を利用し、レポート画面にバナー広告を表示する構成です。広告リクエストは非パーソナライズ広告（NPA）を指定し、広告パーソナライズとPublisher first-party IDを無効にしています。NPAの指定は、情報収集や外部通信のすべてを停止するものではありません。</p>
       <p>Googleの資料によると、Google Mobile Ads SDKは、IPアドレスとそこから推定するおおよその地域、端末・アプリに関する識別情報、広告の表示・操作情報、クラッシュや性能などの診断情報を処理する可能性があります。これらは広告の配信、頻度管理、効果測定、不正防止やSDKの診断などに使われる場合があります。UMPも、同意情報の更新やフォーム表示のため、地域・端末・同意に関する情報を処理することがあります。実際の処理内容は、SDKの版、OS、配信地域、AdMobの設定、同意状態などにより異なります。<a href="https://developers.google.com/admob/ios/privacy/data-disclosure" rel="noopener">Google Mobile Ads SDKのデータ開示</a>、<a href="https://developers.google.com/admob/flutter/privacy" rel="noopener">Google UMPの実装資料</a>、<a href="https://policies.google.com/privacy" rel="noopener">Googleプライバシーポリシー</a>もご確認ください。</p>
       <p>食事履歴、料理名・カテゴリー、お気に入り、称号、統計、バックアップ内容を広告リクエストや広告SDKのカスタムパラメータへ渡さず、広告の可否を食事データに基づいて決めません。Food Lifeは、食事記録などの利用者データを広告のターゲティングに利用しません。広告SDKによる識別情報の取り扱いについては、<a href="https://policies.google.com/privacy" rel="noopener">Googleのプライバシーポリシー</a>をご確認ください。</p>
-      <h2>5. UMPによる同意管理</h2>
-      <p>アプリは起動時にUMPで同意情報を更新し、UMPが必要と判断した場合に同意フォームを表示します。その後、UMPのcanRequestAdsの結果に基づいて広告をリクエストします。このAPI自体が失敗した場合は広告を許可しません。同意更新やフォーム取得に失敗した場合も、アプリ独自の初期値で同意済みとは判断せず、UMPの正式なAPIで広告可否を確認します。</p>
-      <p>UMPがプライバシー設定の入口を必要とする場合、アプリ設定からフォームを再表示できます。フォームを開いている間は広告を停止し、終了後に広告可否を再確認します。広告をリクエストできない場合も、食事の記録・履歴・レポートなどの基本機能は利用できます。地域別の同意要件やフォームの表示は、AdMob管理画面の設定と地域によって異なります。</p>
-      <p>同意しない、またはオプトアウトした場合でも、UMPや広告SDKによる情報処理がすべて停止するとは限りません。SDKの判断によって制限付き広告等が表示される場合もあります。</p>
+      <h2>5. ATTによる許可確認とUMPによる同意管理</h2>
+      <p>Food Lifeは、広告に関連するトラッキングについて、AppleのApp Tracking Transparency（ATT）を使って利用者の許可を確認します。ATTの許可が得られない場合、広告をリクエスト・読み込みしません。許可された場合も、Google UMPで同意情報を更新し、必要に応じて同意フォームを表示したうえで、UMPが広告配信を許可した場合に限り広告を表示します。ATTの許可だけで広告が表示されるわけではありません。</p>
+      <p>ATTの許可状況はiOSの「設定」から変更できます。許可が撤回された場合、アプリがその状態を確認した時点で広告を停止します。UMPの同意フォームを表示している間も広告を停止し、フォーム終了後に広告配信の可否を改めて確認します。地域別の同意要件やフォームの表示は、AdMob管理画面の設定と地域によって異なります。</p>
+      <p>ATTの許可状況や広告配信の可否にかかわらず、食事の記録・履歴・レポートなどの基本機能は利用できます。広告SDKやUMPが同意確認などに伴って情報を処理する場合があり、ATTの許可がない場合でも、それらすべての情報処理が停止するとは限りません。ただし、ATTの許可がない場合やUMPが広告配信を許可しない場合、広告はリクエスト・表示しません。</p>
       <h2>6. 第三者サービスと外部送信</h2>
       <p>広告配信および同意管理のため、Google Mobile Ads SDKとGoogle UMP SDKを利用しています。これらのSDKを通じて、端末情報や広告利用情報などがGoogleや広告配信に関係する事業者へ送信・共有される場合があります。送信される情報の種類、利用目的、保存期間、提供先は、SDKの版、広告設定、地域、同意状態などによって異なります。詳しくは<a href="https://policies.google.com/privacy" rel="noopener">Googleのプライバシーポリシー</a>をご確認ください。Food LifeではFirebase、独立した解析SDK、広告メディエーションアダプターを利用していません。</p>
       <h2>7. 保存期間と削除</h2>
