@@ -74,6 +74,18 @@ Google Mobile Ads SDKのPrivacy ManifestにはデバイスIDについて`Trackin
 
 スクリーンショットは `assets/screenshots/` に置き、`apps/food-life/index.html` の追加枠を実画像に置き換えます。実画面を使用し、個人情報や実ユーザーの食事データが含まれていないこと、紹介機能が実装済みであることを確認してください。App Store公開前は架空のストアリンクを追加せず、実際の公開URLが確定してから設定します。
 
+## MATOMARI LIFE（開発中）
+
+MATOMARI LIFEのページは`matomari-life/`以下に独立して配置しています。紹介、ヘルプ、利用規約草案、プライバシーポリシー草案、サポートを更新する場合は、アプリ本体の現行実装と公開直前の設定を照合してください。現在のページは開発中の案内であり、規約・ポリシーは草案です。StoreKit/Premium機能の購入案内やApp Storeリンクは、実装・配信開始前に掲載しないでください。
+
+- 紹介：`/matomari-life/`
+- ヘルプ：`/matomari-life/help/`
+- プライバシーポリシー草案：`/matomari-life/privacy/`
+- 利用規約草案：`/matomari-life/terms/`
+- サポート：`/matomari-life/support/`
+
+公開前の実装照合・未確認事項は`docs/MATOMARI_WEB_IMPLEMENTATION_REPORT.md`に記録しています。スコープ監査は`docs/MATOMARI_WEB_SCOPE_AUDIT.md`を参照してください。
+
 ## 新しいアプリや記事を追加する
 
 公開準備が整ったアプリは `apps/<app-slug>/index.html` に個別ページを作成し、トップページのアプリ一覧、関連リンク、`sitemap.xml` に追加します。ブログ記事は `blog/` 以下にHTMLを追加し、ブログ一覧とサイトマップを更新します。公開されていないアプリを利用可能・公開中として紹介しないでください。
