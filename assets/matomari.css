@@ -9,3 +9,10 @@
 .matomari-page a:focus-visible{outline:3px solid #315f5b;outline-offset:3px;border-radius:3px}
 .matomari-page .mat-kicker{color:#315f5b}
 .matomari-page .mat-wrap{overflow-wrap:anywhere}
+/* Final publication: text at 200% may wrap without clipping navigation. */
+.matomari-page{overflow-wrap:anywhere}
+.matomari-page .mat-header{height:auto;min-height:76px}
+.matomari-page .mat-header .header-inner{height:auto;min-height:76px;flex-wrap:wrap;gap:12px}
+.matomari-page .mat-brand{min-width:0;max-width:100%;flex:0 1 auto}
+.matomari-page .mat-brand>span:last-child{min-width:0}
+.matomari-page .mat-footer nav a{max-width:100%;min-width:0;overflow-wrap:anywhere}
