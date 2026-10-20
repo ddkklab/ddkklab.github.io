@@ -32,7 +32,7 @@ Web開始HEAD `053fef991a62b5d5ff8ecba4d5a22b5727ce0c88`、開始時clean。ア�
 
 参照した現行実装: `life_os/lib/core/ads/{ad_consent_controller,google_ads_gateway,ad_runtime,tracking_authorization}.dart`、`ios/Runner/{AdPrivacyNative,BackupCloudNative,BackupKeysNative,StorePurchaseReader}.swift`、OCRは`AppDelegate.swift`、backup各presentation、Free権利と日本語l10n。今回のWebは現在OFF構成と提供後の条件を区別する。
 
-監査の経緯は6E-2のIMPLEMENTATION_REPORT/WEB_REVIEW_AND_PUBLICATION_GATE/DATA_FLOW/ASC、6E-1公開ブロッカー、`/Users/koishi/project_apps/matomari_phase6e0_audit/20261020_1311/` の04/05/06/08を参照。古い「ATT未採用・EULA未決」の記載は今回の確定判断で更新し、過去の検証結果まで書き換えない。
+監査の経緯は6E-2のIMPLEMENTATION_REPORT/WEB_REVIEW_AND_PUBLICATION_GATE/DATA_FLOW/ASC、6E-1公開ブロッカー、`<workspace>/matomari_phase6e0_audit/20261020_1311/` の04/05/06/08を参照。古い「ATT未採用・EULA未決」の記載は今回の確定判断で更新し、過去の検証結果まで書き換えない。
 
 ## 3. URLの実確認
 
