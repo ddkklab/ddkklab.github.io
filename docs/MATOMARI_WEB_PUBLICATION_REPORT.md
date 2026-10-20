@@ -8,20 +8,20 @@
 - Web開始HEAD `e1e0ba278b1781873af8ae65d8b85eaa6def51df`、branch `main`、clean。app開始HEAD `039248277797b734a92fefc10653fc77b14f5f80`、branch `master`、clean。アプリにremoteはなく、変更/pushしていない。
 - 送信先：`origin` = `git@github.com:ddkklab/ddkklab.github.io.git`、`HEAD:refs/heads/main`。通常のfast-forward push。force/reset/cleanなし。
 - remote mainの開始値 `3f28e212e3c51847ec26bd82da3ad01832cb0317`。それ以降の送信差分はMATOMARI専用HTML/CSS/資料とsitemapのみ。Food Life/共通CSS/ブログ等を変更していない。
-- **HTML公開commit：`d25a901ecd5863a6005ca7cf0b19ea366432a0fc`**。前工程の未pushだった2commitも含めて反映。今回privacy/termsの施行日を2026-10-20へ確定し、制定/更新日2026-10-20は維持した。
+- **初版HTML公開commit：`d25a901ecd5863a6005ca7cf0b19ea366432a0fc`**。前工程の未pushだった2commitも含めて反映。今回privacy/termsの施行日を2026-10-20へ確定し、制定/更新日2026-10-20は維持した。
 - Pages公開元は既存のmain/root構成。公開デプロイ履歴/動的workflowのmainと、旧mainの4本文がrootファイルと完全一致することを照合。未認証のPages設定APIは404で設定値自体は取得できなかったが、公開元の設定変更は不要で、変更していない。
 - Pages workflowは公開commitでcompleted/success：[実行結果](https://github.com/ddkklab/ddkklab.github.io/actions/runs/39385934675)。
 
-この報告/ASC表を追記する後続commitは終了報告のHEADで示す。公開HTMLは上記commitで一致確認済みで、後続資料commitでHTML内容は変更しない。
+所有者の追加確認を受け、privacyに個別情報非取得・集計のみ利用の方針を追記した。追記公開commit：`fc621d1fb423840767af9f0f9eb2ed94cf3e5316`、[Pages実行結果](https://github.com/ddkklab/ddkklab.github.io/actions/runs/39387993435)はcompleted/success。以下の5URL表はこの追記後の最新本文を示す。報告/ASC表の後続commitは終了報告のHEADで示し、後続資料commitではHTMLを変更しない。
 
 ## 5URLのHTTP・本文検証
 
-確認日時：`2026-10-20T16:22:14+09:00`。HTTP200だけでなく、レスポンスのバイト列/ハッシュとローカル原稿を照合した。すべてApple標準EULAリンクあり、privacy/termsは施行日の実日付も一致。
+確認日時：`2026-10-20T16:40:44+09:00`。HTTP200だけでなく、レスポンスのバイト列/ハッシュとローカル原稿を照合した。すべてApple標準EULAリンクあり、privacy/termsは施行日の実日付も一致。
 
 | 公開URL | HTTP | 本文SHA-256 | ローカル一致 |
 |---|---|---|---|
 | https://ddkklab.github.io/matomari-life/ | 200 | `278dd4bd30fb95483baf780a011c90023ceaeb2b7966ec88e80887ed7a057d94` | 一致 |
-| https://ddkklab.github.io/matomari-life/privacy/ | 200 | `8dcc06fdb7a0d6dc43fea8d32a9bb082b55db40e77b9d5f94aee66fa3249e888` | 一致 |
+| https://ddkklab.github.io/matomari-life/privacy/ | 200 | `809dec981ac46410549fbdd7208eeabea81bc510bc7c1f37cb7b208d1a7921e3` | 一致 |
 | https://ddkklab.github.io/matomari-life/terms/ | 200 | `e643a1a5947c76b9844d67f7dae511c1b5057249d7f320fe90e0820307a84217` | 一致 |
 | https://ddkklab.github.io/matomari-life/support/ | 200 | `01e794aa7f27a00ba32416d19e8d5cbb1a3154b5da06462cfa600ba87372c4d1` | 一致 |
 | https://ddkklab.github.io/matomari-life/premium/ | 200 | `5ee8ff567f0fe0be4db7f6b5c4a4a84caa751487f94ed7de7d05ab5e84d4bc02` | 一致 |
@@ -46,9 +46,11 @@ Premiumは公開前404→公開後200。旧い本文がHTTP200で残る状態と
 - 公開対象の2開発資料に残っていた個人ホームパスは相対参照等に整理。実名/住所/証明書/キー/認証情報を追加していない。
 - 大量スクリーンショット/全Flutterテスト/アプリビルドを追加していない。今回のWeb検証を実OS ATT全状態/実SDK全通信/本番広告・購入の試験と混同しない。
 
-## ASC資料と残る判定
+## 所有者の運用確認とASCの判定
 
-[最終転記表](MATOMARI_ASC_PRIVACY_FINAL_ENTRY.md)は、初回広告ON予定構成を主表に、全35種類の選択/用途/紐付け/追跡/条件/根拠を記載した。予定ONは選択9/非選択24/保留2。現行OFFは参考列で、ONを実装・有効化したとはしない。特に暗号化backupの本文、端末StoreKit、明示クラッシュOFFを根拠で再分類し、10種/25種の仮説を採用していない。
+所有者は2026-10-20に「個別情報は取得・保存せず、集計のみ利用する」と回答。privacyへ反映し、公開本文の一致を再確認した。これは所有者の運用確認に基づくもので、Appleアカウントへログインして個別情報を閲覧した結果ではない。
+
+[最終転記表](MATOMARI_ASC_PRIVACY_FINAL_ENTRY.md)は、初回広告ON予定構成を主表に、全35種類の選択/用途/紐付け/追跡/条件/根拠を記載した。予定ONは選択9/非選択24/保留2。現行OFFは参考列で、ONを実装・有効化したとはしない。暗号化backupの本文、端末StoreKit、固定SDK/設定を根拠で再分類し、10種/25種の仮説を採用していない。追加回答によりユーザーIDはNOへ確定した。一方、集計にも開示対象があるため、Apple集計にクラッシュ件数等を含むか、その他の独立したデータを含むかの2分類を保留している。個別情報非取得の方針自体は再び未決としていない。
 
 ASCの判定は **限定項目保留**。残る外部確認と担当/画面/確認値は [残る確認](MATOMARI_ASC_REMAINING_DECISIONS.md) のR1/R2に集約。特商法/Apple販売者表示の根拠・適用範囲・停止条件は同資料R3。ブランド名承認だけで法的適合済みとはしていない。
 

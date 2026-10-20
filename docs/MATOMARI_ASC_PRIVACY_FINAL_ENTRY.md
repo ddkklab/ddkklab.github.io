@@ -45,21 +45,21 @@ GMA行は固定版Manifestが宣言するA/B/Cを含める。これはMATOMARI�
 | 20. User Content / その他のユーザーコンテンツ（Other User Content） | 選択しない（NO） | 対象外 | 対象外 | 対象外 | 追加の収集操作なし | B：記録/メモ/OCR採用文字は端末内と暗号化backup。問い合わせ本文は別行。 | NO |
 | 21. Browsing History / 閲覧履歴（Browsing History） | 選択しない（NO） | 対象外 | 対象外 | 対象外 | 追加の収集操作なし | W/G：履歴読取・蓄積機能なし。通常リンクはOSブラウザ。固定SDKの宣言に閲覧履歴なし。追加creative/partnerはR1で再確認。 | NO |
 | 22. Search History / 検索履歴（Search History） | 選択しない（NO） | 対象外 | 対象外 | 対象外 | 追加の収集操作なし | Q：検索条件は画面内/ローカルRepositoryへ。検索語を広告や検索履歴サーバーへ送らない。 | NO |
-| 23. Identifiers / ユーザーID（User ID） | 保留（UNVERIFIED R2） | 保留 R2 | 保留 R2 | 保留 R2 | Cloud利用任意。運営取得範囲を確認 | M/R2：Cloudの不透明なowner/vault関連metadataを運営が取得・保持する範囲が未確認。Apple自身の取扱いと別。 | UNVERIFIED |
+| 23. Identifiers / ユーザーID（User ID） | 選択しない（NO） | 対象外 | 対象外 | 対象外 | 個別IDは運営で取得・保存・分析しない | M：所有者が個別ID/管理情報/ログの非取得を確認。GMAの広告識別子はデバイスIDとして別申告。Apple自身のアカウント処理と区別。 | NO |
 | 24. Identifiers / デバイスID（Device ID） | 選択する（YES） | A・B・C | はい | はい | Free/説明・明示許可/必要UMP/ATT・配信条件。必須の利用条件ではない | G：固定GMA13.11.0がlinked=true/tracking=trueを宣言。NPA/ATT導入だけでfalseへ変更しない。 | UNVERIFIED |
 | 25. Purchases / 購入履歴（Purchase History） | 選択しない（NO） | 対象外 | 対象外 | 対象外 | 追加の収集操作なし | P：StoreKitの署名状態を端末で確認。独自サーバー/receipt転送/Server Notificationsなし。Apple自身の処理を自社収集としない。 | NO |
 | 26. Usage Data / アプリ内の操作（Product Interaction） | 選択する（YES） | A・B・C・F | はい | いいえ | Free/説明・明示許可/必要UMP/ATT・配信条件。必須の利用条件ではない | G/U：GMAはlinked=true、UMPはfalse。広告操作等の経路を申告し、記録の全操作送信とはしない。 | UNVERIFIED |
 | 27. Usage Data / 広告データ（Advertising Data） | 選択する（YES） | A・B・C | はい | いいえ | Free/説明・明示許可/必要UMP/ATT・配信条件。必須の利用条件ではない | G：広告表示/操作データ。GMA linked=true/tracking=false。 | UNVERIFIED |
 | 28. Usage Data / その他の使用状況データ（Other Usage Data） | 選択しない（NO） | 対象外 | 対象外 | 対象外 | 追加の収集操作なし | G/N：独自analytics/追加reportingなし。既知の広告操作はアプリ内の操作/広告データに分類。追加partner時はR1再確認。 | NO |
-| 29. Diagnostics / クラッシュデータ（Crash Data） | 選択しない（NO） | 対象外 | 対象外 | 対象外 | 追加の収集操作なし | C：GMA初期化前にdisableSDKCrashReportingを呼び、公式APIは自動SDKクラッシュ報告を無効化する。他のcrash SDKなし。最終ONビルドでもこの順序が条件。 | UNVERIFIED |
+| 29. Diagnostics / クラッシュデータ（Crash Data） | 保留（UNVERIFIED R2） | 保留 R2（集計に含む場合C/F） | いいえ（個別情報非取得） | いいえ | Apple集計の内容だけ確認 | C/M：GMA自動クラッシュ報告はOFF。運営が使うAppleの集計にクラッシュ件数等が含まれるかは未確認。集計という理由で非収集にしない。 | UNVERIFIED |
 | 30. Diagnostics / パフォーマンスデータ（Performance Data） | 選択する（YES） | A・B・C・F | いいえ | いいえ | Free/説明・明示許可/必要UMP/ATT・配信条件。必須の利用条件ではない | G/U：固定版GMA/UMPともlinked=false/tracking=false。一般開示のuser-associated記述との違いを下記で明示。 | UNVERIFIED |
 | 31. Diagnostics / その他の診断データ（Other Diagnostic Data） | 選択する（YES） | A・B・C | いいえ | いいえ | Free/説明・明示許可/必要UMP/ATT・配信条件。必須の利用条件ではない | G：固定GMA linked=false/tracking=false。クラッシュ無効化だけで全診断を非収集にはしない。 | UNVERIFIED |
 | 32. Surroundings / 環境のスキャン（Environment Scanning） | 選択しない（NO） | 対象外 | 対象外 | 対象外 | 追加の収集操作なし | N/O：AR/周辺環境の構築・送信なし。書類OCRと環境スキャンを区別。 | NO |
 | 33. Body / 手（Hands） | 選択しない（NO） | 対象外 | 対象外 | 対象外 | 追加の収集操作なし | N：手の構造/動作を取得する機能なし。 | NO |
 | 34. Body / 頭部（Head） | 選択しない（NO） | 対象外 | 対象外 | 対象外 | 追加の収集操作なし | N：顔形状/頭の動作取得なし。OS本人認証は結果のみ。 | NO |
-| 35. Other Data / その他の種類のデータ（Other Data Types） | 保留（UNVERIFIED R2） | 保留 R2 | 保留 R2 | 保留 R2 | Cloud利用任意。運営取得範囲を確認 | M/R2：Cloudの世代/状態/整合性metadataや運営が取得するログの保持・分類を最終確認。全部をその他に押し込まない。 | UNVERIFIED |
+| 35. Other Data / その他の種類のデータ（Other Data Types） | 保留（UNVERIFIED R2） | 保留 R2（集計の項目に従う） | いいえ（個別情報非取得） | いいえ | 集計利用の種類だけ確認 | M：個別metadata非取得は確認済み。集計が既存の操作/性能/診断に収まるか、独立したその他のデータを含むかを項目名で確認。 | UNVERIFIED |
 
-**主表：選択する9種類、選択しない24種類、保留2種類、合計35。** 保留はユーザーID/その他の種類のデータ。加えて全体の最終ON構成照合R1は未完了。数だけで公開可能とは判定しない。
+**主表：選択する9種類、選択しない24種類、保留2種類、合計35。** 保留はクラッシュデータ/その他の種類のデータ（Apple集計の内容）。ユーザーIDは所有者確認によりNOへ確定。加えて全体の最終ON構成照合R1は未完了。数だけで公開可能とは判定しない。
 
 ## 3. 判定の根拠と以前の表からの差分
 
@@ -67,7 +67,7 @@ GMA行は固定版Manifestが宣言するA/B/Cを含める。これはMATOMARI�
 
 `lib/integration/backup/data/sodium_backup_crypto.dart:300-356` はmanifestと全plaintext sectionをsecretstreamで暗号化。DEKはVMKでwrapし、VMK/回復キーはKeychainの経路、運営独自サーバーへキーを送る経路なし。`ios/Runner/BackupCloudNative.swift:101,199-224` はprivateCloudDatabaseへcipher CKAssetとサイズ/ハッシュ/indexを保存する。通常記録を可読なCloudKit列へ保存していない。
 
-この具体的な暗号・鍵・保存経路から、電話/住所/健康/財務/メモ等の通常記録を一律UNVERIFIEDとする扱いを解消。Appleの処理を無条件に運営者の可読収集とはしない。一方、indexの世代/時刻/サイズ/状態/不透明IDやConsoleログを運営が取得する範囲は**別のR2**へ集約した。CloudKitがprivateという名称だけで全情報が非収集とはしていない。単なる暗号化だけを理由にユーザーへの紐付けNOにもしていない。
+この具体的な暗号・鍵・保存経路から、電話/住所/健康/財務/メモ等の通常記録を一律UNVERIFIEDとする扱いを解消。Appleの処理を無条件に運営者の可読収集とはしない。さらに所有者は2026-10-20に「個別情報は取得・保存せず、集計のみ利用する」と確認した。ユーザー単位のID/バックアップ管理情報/個別ログを運営で取得・保存・分析しない運用に基づき、ユーザーIDをNOへ確定。これはApple画面を実査した結果ではなく、所有者が確定した運用方針を根拠とする。CloudKitがprivate、またはデータが集計されているという理由だけで全情報を非収集にはしない。残るR2は集計の項目名と分類だけで、個別情報を収集するかの再確認ではない。
 
 ### S/O/Q/W/N：サポートと他の端末処理
 
@@ -81,7 +81,9 @@ OCRは `ios/Runner/AppDelegate.swift:327,471` の端末Vision、検索は `lib/f
 
 ### C：クラッシュ情報
 
-`google_ads_gateway.dart:143` はSDK initialize/load前に `disableSDKCrashReporting` をawait。google_mobile_ads9.1.0のiOSブリッジはGMA同名APIを呼ぶ。公式APIは自動SDKクラッシュ報告を無効にするもので、他のcrash SDKもない。この構成では**選択しない**。SDKの未設定時ManifestにCrash Dataがあることを無視したのではなく、設定APIを根拠に分けた。全診断の停止やSDK内全通信停止は保証しない。ON Releaseの順序/有効性をR1で確認し、設定が欠ける場合はCrash Dataを選択する内容へ再評価する。現行OFFではこの設定API自体を呼ばないため、参考列は通信未観測のUNVERIFIEDを維持。
+`google_ads_gateway.dart:143` はSDK initialize/load前に `disableSDKCrashReporting` をawaitし、iOSブリッジもGMA同名APIへ到達する。この固定設定については自動SDKクラッシュ報告を無効にする根拠がある。ただし所有者の追加確認でAppleの集計情報を運営が利用すると確定したため、**Apple集計にクラッシュ件数等を含むかはR2で保留**する。GMAのAPIだけでアプリ全体のクラッシュデータをNOにしない。クラッシュ集計も取得・利用する場合はYESとし、実際の用途にC/F、個別情報非取得方針に基づき紐付け/追跡「いいえ」を記入する。利用しないと確認でき、他の経路もなければGMA OFFの根拠でNOを維持できる。
+
+集計情報を一律非収集とも、一律「その他のデータ」ともしない。利用状況/性能/障害等の項目は内容に応じ既存のアプリ内の操作/パフォーマンス/その他診断へ分類し、Apple集計による実用途を追加する。項目名を見て確定する前に、用途を推測して増やさない。
 
 ### G/U：固定版SDKとトラッキング
 
@@ -99,7 +101,7 @@ OCRは `ios/Runner/AppDelegate.swift:327,471` の端末Vision、検索は `lib/f
 
 1. マイApp → MATOMARI LIFE → アプリのプライバシー。正式Bundle `com.ddkklab.matomarilife` と一致を確認。Food Lifeを選ばない。
 2. 「データを収集しますか？」には主表の対象構成では「はい」。Free限定・任意同意でも、アプリ全体の収集を答える。R1/R2解消までは保存/Publishしない。
-3. データ種類一覧で主表の「選択する」を選ぶ。「選択しない」は外す。2保留行は担当が回答を確定するまで仮のNOにしない。
+3. データ種類一覧で主表の「選択する」を選ぶ。「選択しない」は外す。2保留行（クラッシュ/その他）は集計の項目名で確定するまで仮のNOにしない。
 4. 選んだ種類ごとに用途A/B/C/Fを対応する日本語項目で選択。次にユーザーとの紐付け、トラッキングを主表の順で回答。画面の表記差は公式英語名も照合する。
 5. プライバシーポリシーURLは、公開後に本文一致を確認した `https://ddkklab.github.io/matomari-life/privacy/` を指定。PremiumページはポリシーURLの代用ではない。任意のプライバシー選択URLを使うなら、既存support/privacyの操作説明と実際の公開ページを照合し、架空URLを作らない。
 6. プレビューでWeb/アプリ/表の一致を確認。Apple標準EULAを使い独自EULAを登録しない方針は維持。ASCの保存・Publish、審査提出は別承認の別工程。
@@ -108,6 +110,6 @@ OCRは `ios/Runner/AppDelegate.swift:327,471` の端末Vision、検索は `lib/f
 
 Webは広告/購入が現在OFFであることと、提供後の配信・契約条件を分けている。主表も予定ONを現在の状態と扱わない。200円/月のみ、任意30日体験、Free上限、EULA、業務データを広告へ渡さない、拒否/撤回/削除の説明は同じ。公開URLと本文検査は [公開報告](MATOMARI_WEB_PUBLICATION_REPORT.md)。
 
-残る外部確認は [R1/R2と販売者表示の確認](MATOMARI_ASC_REMAINING_DECISIONS.md)。35行を準備できたことは、最終Release/全通信/Apple契約/ASC申告の成功ではない。現行OFF列のSDK内部通信は未観測で、収集ゼロとは報告しない。
+個別情報非取得の方針を公開privacyへ反映済み。残る外部確認は [R1/R2と販売者表示の確認](MATOMARI_ASC_REMAINING_DECISIONS.md)。35行を準備できたことは、最終Release/全通信/Apple契約/ASC申告の成功ではない。現行OFF列のSDK内部通信は未観測で、収集ゼロとは報告しない。
 
 一次資料： [Appleの日本語分類/定義](https://developer.apple.com/jp/app-store/app-privacy-details/)、[Googleデータ開示](https://developers.google.com/admob/ios/privacy/data-disclosure)、[GMAの設定API](https://developers.google.com/admob/ios/api/reference/Classes/GADMobileAds)、[Apple CloudKit](https://developer.apple.com/icloud/cloudkit/)。参照した6E-0全9資料/6E-1/6E-2のうち、今回の差分に関係するコード/版固有Manifest/承認運用だけを追加照合した。アプリ側の過去資料を改変していない。
