@@ -1,5 +1,6 @@
 # MATOMARI LIFE — Web正式公開直前の最終レビュー
 
+> この文書は公開前の履歴です。現在の公開結果は [Web公開報告](MATOMARI_WEB_PUBLICATION_REPORT.md)、ASCの現行判断は [最終転記表](MATOMARI_ASC_PRIVACY_FINAL_ENTRY.md) と [残る外部確認](MATOMARI_ASC_REMAINING_DECISIONS.md) を参照してください。
 2026-10-20 JST。**ローカル修正・検証済み、公開は承認待ち**。
 
 ## 1. 対象と確定事項

@@ -1,5 +1,6 @@
 # MATOMARI LIFE — ASCプライバシー入力ガイド
 
+> この文書は公開前の履歴です。現在の公開結果は [Web公開報告](MATOMARI_WEB_PUBLICATION_REPORT.md)、ASCの現行判断は [最終転記表](MATOMARI_ASC_PRIVACY_FINAL_ENTRY.md) と [残る外部確認](MATOMARI_ASC_REMAINING_DECISIONS.md) を参照してください。
 2026-10-20 JST。**転記用の判断表、ASC保存・Publish未実施**。Web最終修正の成果物。基点はアプリHEAD `039248277797b734a92fefc10653fc77b14f5f80` の [6E-2回答表](../../life_os/docs/phase6e2/ASC_PRIVACY_ANSWERS.md) と同CSV。アプリ側の正本は変更していない。
 
 ## 対象と結論
