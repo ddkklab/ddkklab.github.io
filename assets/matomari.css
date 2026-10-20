@@ -4,3 +4,8 @@
 @media(max-width:760px){.mat-hero{grid-template-columns:1fr;padding:54px 23px 35px;gap:8px}.mat-art{min-height:155px;max-width:350px;width:100%;margin:0 auto}.mat-wrap{padding:38px 22px 64px}.mat-grid{grid-template-columns:1fr}.mat-grid .mat-card{padding:19px}.mat-guide-nav{grid-template-columns:1fr 1fr}.mat-toc ul{columns:1}.mat-nav{gap:8px 12px}.mat-nav a{font-size:12px}.mat-footer .footer-inner{display:block}.mat-footer nav{margin-top:10px}}
 @media(max-width:360px){.mat-header .header-inner{padding:12px 14px;gap:10px;align-items:flex-start}.mat-brand{flex:none}.mat-nav{gap:6px 9px}.mat-nav a{font-size:11px}.mat-wrap{padding-left:17px;padding-right:17px}.mat-guide-nav{grid-template-columns:1fr}.mat-hero{padding-left:18px;padding-right:18px}}
 @media(prefers-reduced-motion:reduce){.matomari-page *{scroll-behavior:auto}}
+/* Phase 6E-2: dedicated-page keyboard focus and touch targets. */
+.matomari-page .mat-nav a,.matomari-page .mat-footer nav a{display:inline-flex;align-items:center;min-height:44px;font-size:14px}
+.matomari-page a:focus-visible{outline:3px solid #315f5b;outline-offset:3px;border-radius:3px}
+.matomari-page .mat-kicker{color:#315f5b}
+.matomari-page .mat-wrap{overflow-wrap:anywhere}
