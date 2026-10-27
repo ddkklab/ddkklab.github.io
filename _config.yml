@@ -1,0 +1,8 @@
+# Copy the static HTML/CSS; keep internal notes out of the published site.
+title: ddkklab
+url: https://ddkklab.github.io
+exclude:
+  - docs
+  - README.md
+  - assets/screenshots/README.md
+  - .gitignore

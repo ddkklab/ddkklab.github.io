@@ -4,7 +4,7 @@
 @media(max-width:760px){.mat-hero{grid-template-columns:1fr;padding:54px 23px 35px;gap:8px}.mat-art{min-height:155px;max-width:350px;width:100%;margin:0 auto}.mat-wrap{padding:38px 22px 64px}.mat-grid{grid-template-columns:1fr}.mat-grid .mat-card{padding:19px}.mat-guide-nav{grid-template-columns:1fr 1fr}.mat-toc ul{columns:1}.mat-nav{gap:8px 12px}.mat-nav a{font-size:12px}.mat-footer .footer-inner{display:block}.mat-footer nav{margin-top:10px}}
 @media(max-width:360px){.mat-header .header-inner{padding:12px 14px;gap:10px;align-items:flex-start}.mat-brand{flex:none}.mat-nav{gap:6px 9px}.mat-nav a{font-size:11px}.mat-wrap{padding-left:17px;padding-right:17px}.mat-guide-nav{grid-template-columns:1fr}.mat-hero{padding-left:18px;padding-right:18px}}
 @media(prefers-reduced-motion:reduce){.matomari-page *{scroll-behavior:auto}}
-/* Phase 6E-2: dedicated-page keyboard focus and touch targets. */
+/* Keyboard focus and touch targets. */
 .matomari-page .mat-nav a,.matomari-page .mat-footer nav a{display:inline-flex;align-items:center;min-height:44px;font-size:14px}
 .matomari-page a:focus-visible{outline:3px solid #315f5b;outline-offset:3px;border-radius:3px}
 .matomari-page .mat-kicker{color:#315f5b}
@@ -16,3 +16,20 @@
 .matomari-page .mat-brand{min-width:0;max-width:100%;flex:0 1 auto}
 .matomari-page .mat-brand>span:last-child{min-width:0}
 .matomari-page .mat-footer nav a{max-width:100%;min-width:0;overflow-wrap:anywhere}
+
+/* Tables, questions and layout used by the public guides. */
+.mat-table-scroll{overflow-x:auto;margin:26px 0;border:1px solid var(--mat-border);border-radius:12px}
+.mat-table{width:100%;border-collapse:collapse;background:var(--mat-card);font-size:14px}
+.mat-table th,.mat-table td{padding:14px 16px;text-align:left;vertical-align:top;border-bottom:1px solid var(--mat-border);overflow-wrap:anywhere}
+.mat-table thead{background:#edf2ed}.mat-table tbody tr:last-child>*{border-bottom:0}
+.mat-table th{font-weight:650}.mat-table td{color:#505b56}
+.mat-faq{margin:12px 0;border:1px solid var(--mat-border);border-radius:10px;background:var(--mat-card);padding:0 18px}
+.mat-faq summary{cursor:pointer;min-height:52px;padding:14px 0;font-weight:650;font-size:15px}
+.mat-faq summary:focus-visible,.mat-table-scroll:focus-visible{outline:3px solid #315f5b;outline-offset:3px}
+.mat-faq p{margin-top:0}.mat-grid .mat-card h2{margin:0 0 12px;font-size:21px}
+.mat-hero .mat-art{font-family:var(--sans);font-weight:600;font-size:clamp(18px,2.4vw,25px)}
+.mat-wrap .mat-intro{line-height:1.9}.mat-rule{border:0;border-top:1px solid var(--mat-border);margin:38px 0}
+.mat-nav a,.mat-footer nav a{min-height:44px}.mat-footer nav{flex-wrap:wrap}
+@media(max-width:420px){.mat-table th,.mat-table td{padding:12px 9px;font-size:13px}.mat-hero h1{font-size:37px}.mat-header .header-inner{padding:14px 18px}.mat-brand{font-size:16px}}
+
+.matomari-page .copyright{color:#535f58}

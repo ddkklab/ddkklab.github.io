@@ -1,55 +1,28 @@
 <!doctype html>
 <html lang="ja">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>プライバシーポリシー｜MATOMARI LIFE</title><meta name="description" content="MATOMARI LIFEの保存・外部サービス・広告同意とデータ保護について。"><meta name="theme-color" content="#fbf8f1">
-<meta property="og:type" content="website"><meta property="og:site_name" content="ddkklab"><meta property="og:title" content="プライバシーポリシー｜MATOMARI LIFE"><meta property="og:description" content="MATOMARI LIFEの保存・外部サービス・広告同意とデータ保護について。"><meta property="og:url" content="https://ddkklab.github.io/matomari-life/privacy/"><meta property="og:image" content="https://ddkklab.github.io/assets/matomari-ogp.svg"><meta name="twitter:card" content="summary_large_image">
-<link rel="canonical" href="https://ddkklab.github.io/matomari-life/privacy/"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/assets/style.css"><link rel="stylesheet" href="/assets/matomari.css">
-</head><body class="matomari-page"><a class="skip-link" href="#main">本文へスキップ</a><header class="site-header mat-header"><div class="header-inner"><a class="brand mat-brand" href="/matomari-life/" aria-label="MATOMARI LIFE ホーム"><span class="brand-mark" aria-hidden="true">m</span><span>MATOMARI LIFE</span></a><nav class="mat-nav" aria-label="MATOMARI LIFE ナビゲーション"><a href="/matomari-life/">紹介</a><a href="/matomari-life/help/">ヘルプ</a><a href="/matomari-life/support/">お問い合わせ</a><a href="/matomari-life/premium/">Premium</a><a href="/">ddkklab</a></nav></div></header>
-<main id="main" tabindex="-1"><article class="mat-wrap policy-content">
-<h1>プライバシーポリシー</h1>
-<p class="mat-meta">制定日：<time datetime="2026-10-20">2026年10月20日</time><br>最終更新日：<time datetime="2026-10-20">2026年10月20日</time><br>施行日：<time datetime="2026-10-20">2026年10月20日</time><br>運営：ddkklab（個人開発）</p>
-<aside class="mat-callout" aria-label="現在の提供状況"><p><strong>提供状況（2026年10月20日）：</strong>App Storeでの正式配信は準備中です。現在の通常アプリでは本番広告・有料購入を有効にしていません。以下の有料契約・広告の条件は、それぞれの提供開始後に適用します。</p></aside>
-<nav class="mat-toc" aria-label="この文書の目次"><ul><li><a href="#local">端末内の記録</a></li><li><a href="#backup">バックアップとiCloud</a></li><li><a href="#ads">広告と外部サービス</a></li><li><a href="#att">許可・拒否・撤回</a></li><li><a href="#retention">保持・削除</a></li><li><a href="#contact">お問い合わせ</a></li></ul></nav>
-<h2 id="scope">1. 対象と運営者</h2>
-<p>ddkklab（個人開発）は、MATOMARI LIFEで取り扱う情報について本ポリシーで説明します。本アプリは、日本のiPhone・iPad利用者向けに、お金・暮らし・食生活の記録をまとめて管理するアプリです。独自のユーザーアカウント登録や、運営者独自の記録同期サーバーは設けていません。</p>
-<p>記録は基本的に端末内で扱いますが、iCloud、選択したカレンダー、Appleの決済、Googleの広告・同意管理、ファイル共有や問い合わせなどには外部との通信が伴う場合があります。</p>
-<h2 id="local">2. 端末内の記録と保護</h2>
-<p>固定費・支出予定・資産・積立・貯金目標、期限・更新履歴・チェックリスト、食事・料理・献立などを、表示、編集、集計、試算、通知、バックアップのために扱います。記録は端末内のSQLiteデータベースへ保存し、iOSのファイル保護を利用します。通常のデータベース自体をアプリ独自の方式で暗号化するものではありません。外観等の設定は端末内の設定領域にも保存します。</p>
-<h2 id="ocr">3. 書類・写真の読み取り</h2>
-<p>OCRは、利用者が選んだ写真・画像・PDFやカメラで撮影した書類を、端末上の文字認識で処理します。アプリは原本画像を記録として恒久保存・広告送信せず、利用者が採用した文字を記録に保存します。選択元がiCloud写真や外部のファイルサービスの場合は、端末に取得するため、その提供者による通信が伴う場合があります。</p>
-<h2 id="backup">4. 暗号化バックアップ・iCloud・鍵</h2>
-<p>統合バックアップには認証付き暗号化を使用します。利用者の操作で端末内に作成し、希望する場合はApple CloudKitのprivate databaseへ暗号化したバックアップを保存できます。通常のデータベースを常時自動同期する機能ではありません。iCloud保存では、暗号化ファイルのほか、世代・作成日時・サイズ・整合性確認等の管理情報をAppleへ送信します。</p>
-<p>運営者は、CloudKit ConsoleやAppleの分析画面から、ユーザー単位のID・バックアップ管理情報・個別ログを取得・保存・分析しません。サービスの利用状況や安定性の確認には、Appleが提供する集計情報のみを利用します。</p>
-<p>通常の暗号化キーはKeychainで管理します。回復キーの保管、任意のKeychain鍵同期、iCloudへのバックアップ保存はそれぞれ別です。iCloudに保存できたことだけで、別端末で復元できることを保証しません。対応する回復キーと利用可能な鍵の両方を失った場合、運営者が復号して記録を取り戻すことはできません。</p>
-<p>旧JSONの読み込みや各機能の手動書き出し・共有ファイルは、暗号化統合バックアップとは保護が異なり、平文で記録を含む場合があります。共有先・保存先とファイル内容を確認し、回復キーはバックアップと分けて安全に保管してください。内部保全コピーも、暗号化統合バックアップと同一の形式・保護ではありません。</p>
-<h2 id="os">5. 通知・カレンダー・本人確認</h2>
-<p>利用者が有効にした期限のお知らせは端末のローカル通知を利用し、通知本文は端末の表示設定によりロック画面へ表示される場合があります。選んだカレンダーへ作成する予定は、そのカレンダーの設定に従い、iCloud・Google・Exchange等や共有相手に同期される場合があります。通知・カレンダー・iCloudバックアップ・復旧はFreeでも利用できます。</p>
-<p>バックアップの重要操作ではOSの本人確認を利用します。アプリが顔画像・指紋など生体情報そのものを取得するものではありません。</p>
-<h2 id="ads">6. 広告・Google Mobile Ads・UMP</h2>
-<p>広告にはGoogle Mobile Ads SDKとGoogleのUser Messaging Platform（UMP）を使用します。現在、通常アプリでは本番広告を配信していません。広告の提供開始後は、Free利用者について適切な許可・同意と確認済みの配信条件がそろう場合に限り、「お金」「暮らし」「食生活」の各トップ画面末尾に最大1枠を表示します。統合ホーム、設定、登録・編集・詳細画面には表示しません。Premium・有効な30日体験中も広告を表示しません。</p>
-<p>Googleの公式開示には、IPアドレス由来のおおよその位置、端末・広告の識別子、広告の表示や操作、パフォーマンスやクラッシュ等の診断情報が挙げられています。広告配信、効果測定、分析、不正防止、同意管理などのために処理される場合があり、実際の範囲はSDK、地域、同意、端末設定によります。非パーソナライズ広告（NPA）でも、情報が収集されないとは限りません。</p>
-<p><strong>アプリに登録した資産額・支出・期限・チェックリスト・食事内容や検索語を、広告リクエストのパラメータとして渡す処理は設けていません。</strong></p>
-<p>詳細は<a href="https://policies.google.com/privacy?hl=ja">Googleプライバシーポリシー</a>と<a href="https://developers.google.com/admob/ios/privacy/data-disclosure">Google Mobile Ads SDKのデータ開示</a>をご確認ください。</p>
-<h2 id="att">7. 広告の許可・拒否・撤回とATT</h2>
-<p>アプリ内で広告を許可する操作、Googleの必要な同意確認、iOSのトラッキング許可（ATT）は別です。ATTは、他社のアプリやWebサイトの情報と関連付けた広告配信・測定等の許可を確認する仕組みで、ATT許可だけで広告を読み込むものではありません。初回起動直後に無条件で要求せず、Freeで利用者が説明を確認して進め、Googleの必要な確認を通った場合に限り、必要に応じてOSの確認を表示します。Premium・体験中には要求しません。</p>
-<p>広告やATTを拒否してもアプリの記録機能は利用できます。追跡を伴わない広告の配信可否はSDK構成とGoogleの配信条件を別途確認します。確認できていない非追跡配信は保留し、提供済みとは扱いません。</p>
-<p>広告設定を利用できる構成では、アプリの「設定」→「広告とプライバシー」→「広告を拒否・停止する」で新しい広告要求を停止し、表示中の広告を除去できます。同じ画面の「配信同意の確認・再設定」で、Googleが必要とする同意設定を確認できます。ATTの変更はiOSの「設定」でMATOMARI LIFEのトラッキング設定を確認してください。OSや保護者等による制限はアプリから解除できず、OSの状態によっては変更できません。</p>
-<p>停止・撤回は、送信済み情報の削除、進行中の要求の取り戻し、SDK内部の全通信停止を保証するものではありません。Googleが保持する情報の管理については同社の案内もご確認ください。現在の通常アプリでは広告OFFのため、広告許可の操作は提供していません。</p>
-<h2 id="purchase">8. PremiumとAppleの購入情報</h2>
-<p>有料購入の提供開始後は、AppleのStoreKitで商品価格と購入・更新・失効・返金等の状態を確認し、Premiumの権利を判定します。独自の課金サーバーへレシートを転送せず、カード番号やApple Accountのパスワードをアプリが取得するものではありません。購入・決済にはAppleの条件が適用されます。</p>
-<p>任意開始の30日Premium体験は支払い登録不要で、満了時に自動課金しません。体験の開始・期限等は専用のKeychain領域で管理し、通常データのバックアップとは分けます。</p>
-<h2 id="retention">9. 記録・コピー・鍵の保持と削除</h2>
-<p>記録は、利用者が削除するまで端末内に保持することを基本としますが、記録の削除と履歴・コピーの削除は同一ではありません。資産は削除後も評価履歴を保持します。ほかの記録も、履歴・関連記録や既存のバックアップに残る場合があります。</p>
-<ul><li>各機能の削除操作は、その画面で示す対象と範囲に適用します。</li><li>端末内の暗号化バックアップとiCloudのバックアップ世代は、バックアップ管理のそれぞれの一覧から、対象を確認して個別に削除できます。記録を削除しても過去のバックアップは自動消去されません。</li><li>内部保全コピーの整理は別の管理操作です。整理を許可した管理対象の候補だけを条件確認後に整理し、従来のすべてのコピーを一括消去する機能ではありません。</li><li>持ち出したJSON等は、利用者が保存・共有した先でも管理してください。</li><li>Keychainの鍵・体験記録は、記録やバックアップ世代の削除とは別です。アプリ内にすべてのKeychain情報を一括消去する操作はありません。</li></ul>
-<p>アプリ削除で端末内データや端末内バックアップを失う可能性がある一方、iCloudやKeychainの情報がすべて消去されるとは限りません。削除前に必要なバックアップと回復手段を確認してください。詳しくは<a href="/matomari-life/help/backup/">バックアップと復元のヘルプ</a>をご覧ください。</p>
-<h2 id="external">10. 外部サービス・国外での取扱い</h2>
-<p>Apple、Google、利用者が選択したカレンダー・ファイル保存先・共有先等が、利用する機能の範囲で情報を取り扱います。国外で処理・保存される場合があり、国内だけで保存されるとは保証しません。各提供者の取扱いと保持・削除条件は、利用するサービス・設定および提供者のポリシーに従います。運営者が全提供者の保存期間や削除完了を保証するものではありません。<a href="https://www.apple.com/jp/legal/privacy/">Appleのプライバシーポリシー</a>もご確認ください。</p>
-<h2 id="minors">11. 未成年の方へ</h2>
-<p>未成年の方は、保護者と本ポリシー・利用規約を確認し、有料契約など法令上同意が必要な行為は保護者の同意を得て行ってください。Appleの年齢設定、OS・保護者による制限を尊重します。広告の提供は必要な同意と確認済みの配信条件が整う場合に限り、年齢や地域の条件を満たしていない状態で配信を始めません。</p>
-<h2 id="contact">12. 問い合わせ・情報の確認や削除の相談</h2>
-<p>運営：ddkklab（個人開発）。情報の取扱い、運営者が保有する情報の確認・開示・訂正・削除等については、<a href="mailto:support.ddkklab@gmail.com">サポートへメールする</a>。内容に応じて本人確認や対象情報の確認をお願いする場合があります。端末内の記録や復号用の鍵を運営者が遠隔で閲覧・削除できる仕組みは設けていません。Apple・Google等が保有する情報は、必要に応じて各提供者の窓口へご案内します。</p>
-<p>問い合わせ内容と連絡先は、対応および継続対応に必要な期間保管し、不要になった情報を整理・削除します。広告目的には利用しません。固定の保存日数や第三者での完全削除は保証しません。回復キー、パスワード、カード情報、生活記録全体をメールへ送らないでください。</p>
-<h2 id="changes">13. 本ポリシーの変更</h2>
-<p>機能や外部サービスの変更等に合わせて見直し、最終更新日を表示します。重要な変更はアプリまたは本サイトで案内し、法令上必要な場合は同意を確認します。</p>
-</article></main><footer class="site-footer mat-footer"><div class="footer-inner"><a class="brand mat-brand" href="/matomari-life/"><span class="brand-mark" aria-hidden="true">m</span><span>MATOMARI LIFE</span></a><nav aria-label="フッターナビゲーション"><a href="/matomari-life/">紹介</a><a href="/matomari-life/help/">ヘルプ</a><a href="/matomari-life/privacy/">プライバシーポリシー</a><a href="/matomari-life/terms/">利用規約</a><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Apple標準EULA</a><a href="/matomari-life/support/">お問い合わせ</a><a href="/blog/">ddkklabブログ</a><a href="mailto:support.ddkklab@gmail.com">support.ddkklab@gmail.com</a></nav></div><p class="copyright">© 2026 ddkklab</p></footer></body></html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>プライバシーポリシー｜MATOMARI LIFE</title>
+<meta name="description" content="端末内の記録、レシート画像・文字認識、iCloud手動バックアップ、Google広告、同意、保持と削除について。">
+<meta name="theme-color" content="#fbf8f1">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="MATOMARI LIFE">
+<meta property="og:title" content="プライバシーポリシー｜MATOMARI LIFE">
+<meta property="og:description" content="端末内の記録、レシート画像・文字認識、iCloud手動バックアップ、Google広告、同意、保持と削除について。">
+<meta property="og:url" content="https://ddkklab.github.io/matomari-life/privacy/">
+<meta property="og:image" content="https://ddkklab.github.io/assets/matomari-ogp.png">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="MATOMARI LIFE 暮らしのあれこれ、ひとつに。">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://ddkklab.github.io/matomari-life/privacy/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/assets/style.css">
+<link rel="stylesheet" href="/assets/matomari.css">
+</head>
+<body class="matomari-page">
+<a class="skip-link" href="#main">本文へスキップ</a><header class="site-header mat-header"><div class="header-inner"><a class="brand mat-brand" href="/matomari-life/" aria-label="MATOMARI LIFE ホーム"><span class="brand-mark" aria-hidden="true">m</span><span>MATOMARI LIFE</span></a><nav class="mat-nav" aria-label="メインナビゲーション"><a href="/matomari-life/">紹介</a><a href="/matomari-life/help/">使い方</a><a href="/matomari-life/premium/">料金</a><a href="/matomari-life/support/">サポート</a></nav></div></header>
+<main id="main" tabindex="-1"><article class="mat-wrap policy-content"><h1>プライバシーポリシー</h1><p class="mat-meta">最終更新：2026年10月27日</p><section aria-labelledby="scope"><h2 id="scope">対象と運営</h2><p>ddkklab（個人開発）が提供するMATOMARI LIFEにおける情報の扱いを説明します。独自アカウント登録や運営者の記録同期サーバーは設けていません。</p></section><section aria-labelledby="local"><h2 id="local">端末内で扱う情報</h2><p>支払い・支出・資産・期限・チェックリスト・食事など、ご自身が入力した記録を端末内に保存し、表示・集計・通知・バックアップに利用します。OSのファイル保護を利用しますが、端末の全データをアプリ独自に暗号化する方式ではありません。</p></section><section aria-labelledby="receipt"><h2 id="receipt">レシートと文字認識</h2><p>レシートは端末で文字を読み取り、日付・店舗・金額などをご自身で確認・修正して保存します。アプリはレシート画像や読み取った全文を独自に永続保存せず、確定した支出データと操作履歴などを保存します。写真の保存元やOSが管理する一時データの完全な消去を保証するものではありません。</p><p>採用した店舗名などのテキストは支出記録へ保存されます。写真やファイルの読み込み元がクラウドサービスの場合は、その取得のための通信が発生することがあります。</p></section><section aria-labelledby="backup"><h2 id="backup">iCloudバックアップ</h2><p>iCloudの手動バックアップは、Apple CloudKitの利用者ごとの非公開領域に記録を保存します。現在のApple AccountでiCloudを利用できることと、通信できることが必要です。常時自動同期ではなく、ご自身でバックアップと復元を操作します。別端末でも、対応するアプリと同じApple Accountなどの利用条件を確認してください。</p><p>バックアップ本体と、保存世代・日時・サイズ・整合性確認用の情報などをAppleへ送信します。通信と保存にはAppleの保護を利用します。運営者が利用者のバックアップを取得して内容を読む仕組みは設けていません。ご自身で書き出し・共有するファイルは、保存先や共有先でも管理してください。</p></section><section aria-labelledby="ads"><h2 id="ads">広告と選択</h2><p>Freeでは、アプリ内の広告許可と必要な同意が成立した場合に広告を表示します。iOSのトラッキング許可（ATT）とGoogleの広告同意は別の選択です。ATTを拒否した場合も、必要な同意と非追跡配信の条件を満たすときに限り、非パーソナライズ広告を表示する場合があります。同意や配信条件を確認できない場合は広告を要求しません。Premium・30日体験中は広告を要求しません。</p><p>非パーソナライズ広告も、通信やデータ処理が一切ないという意味ではありません。「設定」→広告とプライバシーから選択を確認・変更できます。拒否しても記録機能を利用できます。広告の取得失敗で、保存済みの支出記録を取り消すことはありません。</p></section><section aria-labelledby="google"><h2 id="google">Googleの広告・同意サービス</h2><p>Google Mobile AdsとUser Messaging Platformを利用します。これらのサービスは広告配信、測定、不正防止、同意管理などのため、IPアドレス由来の概略位置、端末識別子、広告・操作情報、クラッシュ・性能などの診断情報を処理する場合があります。アプリから家計・資産・食事・生活記録、レシート画像、文字認識全文を広告サービスへ渡しません。</p><p><a href="https://policies.google.com/privacy?hl=ja">Googleプライバシーポリシー</a> ／ <a href="https://developers.google.com/admob/ios/privacy/data-disclosure?hl=ja">GoogleによるSDKのデータ開示</a></p></section><section aria-labelledby="services"><h2 id="services">購入・体験・OS連携</h2><p>有料契約の決済と購入履歴の管理はAppleが行います。アプリは確認できた契約状態を使ってPremiumの利用権を判定し、運営者がカード番号などの決済情報を収集する仕組みはありません。任意体験の開始・期限の記録は端末の保護された領域で管理し、通常記録のバックアップと分けて扱います。通知、カメラ、カレンダーなどの許可はOSの設定で変更できます。選択したカレンダーやファイルの同期・共有先には、各サービスの条件が適用されます。</p></section><section aria-labelledby="retention"><h2 id="retention">保持・削除・持ち出し</h2><p>記録を削除しても、変更履歴、復元前の内部保全コピー、以前のバックアップや書き出したファイルから直ちに消えるとは限りません。保存先や共有先のコピーは、それぞれの場所で管理してください。</p><p>アプリの削除と、クラウド上のバックアップ、共有済みファイル、OSの保護された領域の削除は別です。すべてのコピーやOS管理データの即時完全消去を保証しません。バックアップや移行ファイルを共有するときは、内容と共有先を確認してください。</p></section><section aria-labelledby="contact"><h2 id="contact">問い合わせ</h2><p>問い合わせを送信した場合、メールアドレスと本文を回答・サポートのために利用します。生活記録全体、レシート、パスワード、Apple Accountの認証情報、決済情報を送る必要はありません。窓口：<a href="mailto:support.ddkklab@gmail.com">support.ddkklab@gmail.com</a></p></section><section aria-labelledby="changes"><h2 id="changes">文書の見直し</h2><p>機能や外部サービスの変更に合わせて本ポリシーを見直します。重要な変更は本サイトまたはアプリで案内し、必要な手続きを行います。</p></section></article></main>
+<footer class="site-footer mat-footer"><div class="footer-inner"><a class="brand mat-brand" href="/matomari-life/">MATOMARI LIFE</a><nav aria-label="フッターナビゲーション"><a href="/matomari-life/privacy/">プライバシーポリシー</a><a href="/matomari-life/terms/">利用規約</a><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Apple標準EULA</a><a href="/matomari-life/support/">お問い合わせ</a><a href="/">ddkklab</a></nav></div><p class="copyright">© 2026 ddkklab</p></footer>
+</body>
+</html>
