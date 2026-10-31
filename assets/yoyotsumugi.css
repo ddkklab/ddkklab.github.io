@@ -1,0 +1,40 @@
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#f8f4e9;color:#233c34;font-family:-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;line-height:1.9}
+a{color:#245d49;text-underline-offset:.25em}
+a:hover{text-decoration-thickness:2px}
+a:focus-visible{outline:3px solid #b46720;outline-offset:5px}
+header,footer,main>section,main>article{padding:32px max(24px,calc((100vw - 1040px)/2))}
+header{display:flex;justify-content:space-between;align-items:center;gap:24px;border-bottom:1px solid #d4d6c8}
+nav{display:flex;flex-wrap:wrap;gap:12px 24px}
+.brand{font-size:24px;font-weight:800;text-decoration:none;letter-spacing:.12em}
+.brand small{display:block;font-size:10px;letter-spacing:.25em}
+.hero{background:#183e36;color:#fbf4df;padding-top:80px;padding-bottom:72px}
+.eyebrow{font-size:14px;letter-spacing:.15em}
+h1{font-family:Georgia,"Yu Mincho",serif;font-size:clamp(36px,7vw,78px);line-height:1.35;letter-spacing:.06em;margin:24px 0}
+h2{font-size:clamp(24px,3vw,34px);line-height:1.6;margin-top:36px}
+h3{line-height:1.6}
+p{max-width:74ch}
+.lead{font-size:clamp(17px,2vw,21px)}
+.badge{display:inline-block;border:1px solid #a7bbaa;padding:4px 16px;border-radius:24px;font-size:14px}
+.button{display:inline-block;padding:12px 22px;background:#f0d69a;color:#183e36;border-radius:4px;font-weight:700;text-decoration:none}
+.eras{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin:40px 0}
+.eras article{border-top:3px solid #9b793a;padding-top:22px}
+.eras span{font-size:13px;letter-spacing:.12em}
+section+section{border-top:1px solid #d4d6c8}
+dt{font-weight:700;margin-top:24px}
+dd{margin:8px 0 24px}
+.note{border-left:3px solid #9b793a;padding-left:20px;font-size:14px}
+main>article{max-width:100%;padding-bottom:72px}
+main>article h1{font-size:clamp(30px,5vw,48px)}
+main>article p{max-width:80ch}
+footer{border-top:1px solid #d4d6c8;font-size:14px}
+.skip{position:absolute;left:16px;top:-100px;background:white;padding:8px}
+.skip:focus{top:8px}
+@media(max-width:640px){header{align-items:flex-start;flex-direction:column}
+.eras{grid-template-columns:1fr;gap:12px}
+.hero{padding-top:48px}
+nav{font-size:14px;gap:10px 18px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}
+}
