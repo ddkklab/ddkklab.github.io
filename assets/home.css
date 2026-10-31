@@ -1,0 +1,18 @@
+/* Homepage-only category layouts. */
+.ddk-home .home-categories{display:flex;justify-content:center;flex-wrap:wrap;gap:14px;margin-top:30px}
+.ddk-home .home-categories a{padding:10px 22px;border:1px solid var(--line);border-radius:30px;text-decoration:none;font-size:14px;background:var(--white)}
+.ddk-home .home-categories span{margin-left:20px}
+.ddk-home .home-app-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.ddk-home .home-app-grid .app-card{display:flex;flex-direction:column;padding:30px;min-width:0}
+.ddk-home .home-app-grid .app-card>img{border-radius:16px;object-fit:contain}
+.ddk-home .home-app-grid .app-card h3{font-size:25px;margin:24px 0 8px}
+.ddk-home .home-app-grid .app-card p{font-size:14px;min-height:0}
+.ddk-home .home-app-grid .app-card .home-tagline{font-weight:600;color:var(--ink);font-size:15px;margin-bottom:12px}
+.ddk-home .home-app-grid .text-link{margin-top:auto;padding-top:12px;font-size:14px}
+.ddk-home .home-app-mark{width:64px;height:64px;display:grid;place-items:center;border-radius:16px;background:#e6efeb;color:#3d6863;font:italic 36px Georgia,serif}
+.ddk-home .home-yoyo-mark{background:#183e36;color:#f0d69a;font:30px var(--serif)}
+.ddk-home .home-games{background:#efedf4;border-top:1px solid #e0dce9;border-bottom:1px solid #e0dce9}
+.ddk-home .home-games .eyebrow{color:#635179}
+.ddk-home .home-games .app-status{background:#f0edf5;color:#635179}
+.ddk-home a:focus-visible{outline:3px solid #9c633c;outline-offset:5px}
+@media(max-width:760px){.ddk-home .home-app-grid{grid-template-columns:1fr}.ddk-home .home-app-grid .app-card{padding:26px}.ddk-home .home-category h2{font-size:30px}.ddk-home .hero h1{font-size:clamp(32px,8vw,49px)}}
