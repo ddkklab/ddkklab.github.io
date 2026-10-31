@@ -25,3 +25,6 @@ Google SDKのデータ処理や法務上の判断を、非パーソナライズ�
 ## ローカル検証の限界
 
 privateプロファイルのChromeで画面・リンクを確認しています。プレビューの公開除外ルールはJekyll設定のローカル模擬であり、実際のGitHub Pagesビルドと公開後検証の代用にはしません。外部のフォント・JavaScript・トラッキングは追加していません。
+
+## Dice Muta（2026-11-01）
+/dice-muta/ に紹介、shop/ に3商品の料金、support/、privacy/、terms/ を追加。アプリは公開準備中で、架空のApp Storeリンクを置かない。任意購入は広告非表示¥500、研究ポイント5/¥100・20/¥300。Googleの実publisher行と既存app-ads.txtは保持。問い合わせ先は既存のsupport.ddkklab@gmail.com。制作物・既存アプリページを流用せず、ゲーム自身の背景/画面を使用。公開前に最新ビルド/商品状態と照合する。
