@@ -1,5 +1,4 @@
 User-agent: *
-Disallow: /docs/
-Disallow: /README.md
+Disallow:
 
 Sitemap: https://ddkklab.github.io/sitemap.xml
